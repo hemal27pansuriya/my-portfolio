@@ -12,7 +12,7 @@ import {
 
 export const greetings: GreetingsType = {
   name: "Hemal Pansuriya",
-  title: "Hi all, I'm Hemal Pansuriya",
+  title: "Hi all, I'm Hemal",
   description:
     "Dedicated Full Stack web developer with expertise in backend technologies, specializing in Node.js, Express.js, and MongoDB. Recently started working on the frontend using React.js to broaden skills in creating seamless user interfaces; known for effective communication and collaborative problem-solving within cross-functional teams.",
   resumeLink: "#",
@@ -25,7 +25,7 @@ export const openSource = {
 export const contact = {};
 
 export const socialLinks: SocialLinksType = {
-  email: "hemalpansuriya007@gmail.com",
+  email: "mailto:hemalpansuriya007@gmail.com",
   linkedin: "https://www.linkedin.com/in/hemal-pansuriya-750a22203/",
   github: "https://github.com/hemal27pansuriya"
 };
@@ -38,9 +38,8 @@ export const skillsSection: SkillsSectionType = {
       title: "Full Stack Development",
       lottieAnimationFile: "/lottie/skills/fullstack.json", // Path of Lottie Animation JSON File
       skills: [
-        emoji("⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js"),
-        emoji("⚡ Building responsive static websites using Next.js"),
-        emoji("⚡ Building RESTful APIs in Django & Django REST Framework"),
+        emoji("⚡ Building RESTful APIs in Node.js & Express.js REST Framework"),
+        emoji("⚡ Building responsive static websites using React.js"),
       ],
       softwareSkills: [
         {
@@ -48,11 +47,11 @@ export const skillsSection: SkillsSectionType = {
           iconifyTag: "logos:javascript",
         },
         {
-          skillName: "Node",
+          skillName: "Nodejs",
           iconifyTag: "logos:nodejs",
         },
         {
-          skillName: "Express",
+          skillName: "Expressjs",
           iconifyTag: "logos:express",
         },
         {
@@ -60,17 +59,49 @@ export const skillsSection: SkillsSectionType = {
           iconifyTag: "logos:mongodb",
         },
         {
+          skillName: "Redis",
+          iconifyTag: "logos:redis",
+        },
+        {
+          skillName: "MySql",
+          iconifyTag: "logos:mysql",
+        },
+        {
+          skillName: "Socketio",
+          iconifyTag: "devicon:socketio-wordmark",
+        },
+        {
           skillName: "Reactjs",
           iconifyTag: "vscode-icons:file-type-reactjs",
         },
         {
-          skillName: "Nextjs",
-          iconifyTag: "vscode-icons:file-type-light-next",
+          skillName: "Graphql",
+          iconifyTag: "logos:graphql",
         },
         {
-          skillName: "Github",
-          iconifyTag: "akar-icons:github-fill",
-        }
+          skillName: "Typescript",
+          iconifyTag: "logos:typescript",
+        },
+        {
+          skillName: "Nestjs",
+          iconifyTag: "logos:nestjs",
+        },
+        {
+          skillName: "HTML",
+          iconifyTag: "skill-icons:html",
+        },
+        {
+          skillName: "CSS",
+          iconifyTag: "skill-icons:css",
+        },
+        {
+          skillName: "Bootstrap",
+          iconifyTag: "logos:bootstrap",
+        },
+        {
+          skillName: "Git",
+          iconifyTag: "logos:git",
+        },
       ],
     },
   ],
@@ -96,8 +127,16 @@ export const educationInfo: EducationType[] = [
     schoolName: "Government Engineering College, Gandhinagar",
     subHeader: "Bachelor of Engineering in Information Technology",
     duration: "June 2018 - April 2022",
-    desc: "",
-    grade: "8.51",
+    desc: "Completed graduation in information technology containing web development, data structure, database, cryptography etc subjects.",
+    grade: "CGPA - 8.51",
+    descBullets: [], // Array of Strings
+  },
+  {
+    schoolName: "Nalanda Vidhyalay - Derdi(Ku.)",
+    subHeader: "11-12th Science",
+    duration: "June 2016 - April 2018",
+    desc: "Completed higher studies in science steam containing Mathematics, Physics and Chemistry subjects.",
+    grade: "88%",
     descBullets: [], // Array of Strings
   },
 ];
@@ -106,18 +145,24 @@ export const experience: ExperienceType[] = [
   {
     role: "Web Developer",
     company: "Yudiz Solutions Limited",
-    companyLogo: "/img/icons/common/meganos.png",
+    companyLogo: "/img/icons/common/yudiz-logo.png",
     date: "Jan 2022 - Present",
-    desc: "I crafted backends for diverse web apps, APIs, and WebSockets in e-commerce, podcasts, and property management. Managed server upkeep, deployments on Linux, Heroku, and AWS S3. Implemented PyTest for automated unit and integration testing, slashing 4 hours of manual testing each sprint, fortifying a dependable and flawless code foundation.",
+    desc: "Currently, I am actively involved in collaborative team projects, working across diverse technical teams, and utilizing my expertise in Node.js, Express.js, MongoDB, MySQL, Redis, and Socket.IO. Projects like Fansportiz, HousieMate, Cartola Pix Fantasy, Jio Fantasy, and Lovely Finance reflect my ability to thrive in cross-functional environments while contributing to the development of robust solutions."
   }
 ];
 
 export const projects: ProjectType[] = [
   {
-    name: "portfolio",
-    desc: "Portfolio website",
-    github: "https://github.com/hemal27pansuriya/my-portfolio",
-    link: "test",
+    name: "HousieMate",
+    desc: "Game of Housie where user can easily manage number of tickets easily. Providing 45+ winning patterns where one can select desired winning patterns and play Housie game with interactive UI experience.",
+    github: "",
+    link: "https://housiemate.com",
+  },
+  {
+    name: "Fansportiz",
+    desc: "Fantasy sports game where user can create teams and join contest and won exciting prizes. Providing number of sports games containing Cricket, Football, Basketball, Kabaddi, Baseball, Csgo etc.",
+    github: "",
+    link: "https://fansportiz.com",
   }
 ];
 

@@ -14,7 +14,7 @@ const Proficiency = () => {
               <h1 className="h1">Proficiency</h1>
               {SkillBars.map(skill => {
                 return (
-                  <div className="progress-info" key={skill.Stack}>
+                  <div className="progress-success" key={skill.Stack}>
                     <div className="progress-label">
                       <span>{skill.Stack}</span>
                     </div>
@@ -24,7 +24,7 @@ const Proficiency = () => {
                     <Progress
                       max="100"
                       value={skill.progressPercentage}
-                      color="info"
+                      color="success"
                       role="progressbar"
                       aria-label={skill.Stack}
                     />
