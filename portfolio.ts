@@ -11,11 +11,11 @@ import {
 } from "./types/sections";
 
 export const greetings: GreetingsType = {
-  name: "Hemal Pansuriya",
+  name: "हेमल पानसुरीया",
   title: "Hi all, I'm Hemal",
   description:
     "Dedicated Full Stack web developer with expertise in backend technologies, specializing in Node.js, Express.js, and MongoDB. Recently started working on the frontend using React.js to broaden skills in creating seamless user interfaces; known for effective communication and collaborative problem-solving within cross-functional teams.",
-  resumeLink: "#",
+  resumeLink: "https://drive.google.com/file/d/1St3J__lKr3TsLkfxplL-U34xl0i1P6-n/view?usp=drive_link",
 };
 
 export const openSource = {
@@ -163,6 +163,30 @@ export const projects: ProjectType[] = [
     desc: "Fantasy sports game where user can create teams and join contest and won exciting prizes. Providing number of sports games containing Cricket, Football, Basketball, Kabaddi, Baseball, Csgo etc.",
     github: "",
     link: "https://fansportiz.com",
+  },
+  {
+    name: "Cartola Pix",
+    desc: "Cartola pix is also fantasy sports game based on brazil. Working on features like live game events with third party.",
+    github: "",
+    link: "",
+  },
+  {
+    name: "Powerplay11",
+    desc: "Powerplay11 is also fantasy sports game similar to fansportiz by jio in jiogames. Worked on crucial modules like prize breakup and crown currency provided by Jio games.",
+    github: "",
+    link: "",
+  },
+  {
+    name: "Lovely",
+    desc: "Lovely is the platform where lucky user wins crypto coins by bidding currency on cards, coin, dice in different games. Basically this was blockchain project as bidding with cryptocurrency in game, There are games Ace Cosmos(card), Lovely Queen(card), Toss Master(coin), Roll Dice(dice), Rolling Luck(number).",
+    github: "",
+    link: "",
+  },
+  {
+    name: "Get Contacts",
+    desc: "GetContact is the platform to find the person by mobile number and by field and designation. App where you can find all connections of searched contact that how you are connected to them.",
+    github: "",
+    link: "",
   }
 ];
 
