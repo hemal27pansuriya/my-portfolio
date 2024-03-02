@@ -93,20 +93,6 @@ const Navigation = () => {
                     </NavLink>
                   </NavItem>
                 )}
-                {socialLinks.github && (
-                  <NavItem>
-                    <NavLink
-                      rel="noopener"
-                      aria-label="Github"
-                      className="nav-link-icon"
-                      href={socialLinks.github}
-                      target="_blank"
-                    >
-                      <i className="fa fa-github" />
-                      <span className="nav-link-inner--text d-lg-none ml-2">Github</span>
-                    </NavLink>
-                  </NavItem>
-                )}
                 {socialLinks.linkedin && (
                   <NavItem>
                     <NavLink
@@ -118,6 +104,20 @@ const Navigation = () => {
                     >
                       <i className="fa fa-linkedin" />
                       <span className="nav-link-inner--text d-lg-none ml-2">Linkedin</span>
+                    </NavLink>
+                  </NavItem>
+                )}
+                {socialLinks.github && (
+                  <NavItem>
+                    <NavLink
+                      rel="noopener"
+                      aria-label="Github"
+                      className="nav-link-icon"
+                      href={socialLinks.github}
+                      target="_blank"
+                    >
+                      <i className="fa fa-github" />
+                      <span className="nav-link-inner--text d-lg-none ml-2">Github</span>
                     </NavLink>
                   </NavItem>
                 )}
