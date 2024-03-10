@@ -88,5 +88,5 @@ export type ProjectType = {
   github?: string;
   link?: string;
   img: string;
-  skills?: ProjectSkillsType[];
+  skills: ProjectSkillsType[];
 };
