@@ -13,7 +13,7 @@ const Greetings = () => {
   return (
     <main>
       <div className="position-relative">
-        <section className="section section-lg section-shaped pb-250">
+        <section className="section section-lg section-shaped pb-100">
           <div className="shape shape-style-1 bg-gradient-success">
             <span />
             <span />

@@ -14,7 +14,7 @@ export const greetings: GreetingsType = {
   name: "हेमल पानसुरीया",
   title: "Hi all, I'm Hemal",
   description:
-    "Dedicated Full Stack web developer with expertise in backend technologies, specializing in Node.js, Express.js, and MongoDB. Recently started working on the frontend using React.js to broaden skills in creating seamless user interfaces; known for effective communication and collaborative problem-solving within cross-functional teams.",
+    "Dedicated Full Stack web developer with expertise in backend technologies, specializing in Node.js, Express.js, and MongoDB and frontend technologies specializing in React.js and Redux to broaden skills in creating seamless user interfaces; known for effective communication and collaborative problem-solving within cross-functional teams.",
   resumeLink: "https://drive.google.com/file/d/1kkQJG3DdbXuwkENOlLVL2ddxRR_BZ3mZ/view?usp=sharing",
 };
 
@@ -34,14 +34,14 @@ export const socialLinks: SocialLinksType = {
 
 export const skillsSection: SkillsSectionType = {
   title: "What I do",
-  subTitle: "FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: 'ADVENTUROUS FULL STACK DEVELOPER WITH A PASSION FOR EXPLORING DIVERSE TECH STACKS',
   data: [
     {
-      title: "Full Stack Development",
+      title: "Backend Development",
       lottieAnimationFile: "/lottie/skills/fullstack.json", // Path of Lottie Animation JSON File
       skills: [
         emoji("⚡ Building RESTful APIs in Node.js & Express.js REST Framework"),
-        emoji("⚡ Building responsive static websites using React.js"),
+        emoji("⚡ Crafting high-performance RESTful APIs with Express.js."),
       ],
       softwareSkills: [
         {
@@ -85,6 +85,24 @@ export const skillsSection: SkillsSectionType = {
           iconifyTag: "logos:graphql",
         },
         {
+          skillName: "Grpc",
+          iconifyTag: "logos:grpc",
+        },
+      ],
+    },
+    {
+      title: "Frontend Development",
+      lottieAnimationFile: "/lottie/skills/frontend.json", // Path of Lottie Animation JSON File
+      skills: [
+        emoji("⚡ Building responsive static websites using React.js"),
+        emoji("⚡ Making development easy with Redux and Bootstrap"),
+      ],
+      softwareSkills: [
+        {
+          skillName: "JavaScript",
+          iconifyTag: "logos:javascript",
+        },
+        {
           skillName: "Reactjs",
           iconifyTag: "vscode-icons:file-type-reactjs",
         },
@@ -103,7 +121,17 @@ export const skillsSection: SkillsSectionType = {
         {
           skillName: "Bootstrap",
           iconifyTag: "logos:bootstrap",
-        },
+        }
+      ],
+    },
+    {
+      title: "Tools",
+      lottieAnimationFile: "/lottie/skills/tools.json", // Path of Lottie Animation JSON File
+      skills: [
+        emoji("⚡ Version control using Git & Unit testing using Mocha and Jest"),
+        emoji("⚡ Cloud messaging using firebase push notifications"),
+      ],
+      softwareSkills: [
         {
           skillName: "Git",
           iconifyTag: "logos:git",
@@ -135,10 +163,6 @@ export const skillsSection: SkillsSectionType = {
         {
           skillName: "Firebase",
           iconifyTag: "logos:firebase",
-        },
-        {
-          skillName: "Grpc",
-          iconifyTag: "logos:grpc",
         },
       ],
     },

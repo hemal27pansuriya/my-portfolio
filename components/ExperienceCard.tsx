@@ -24,10 +24,10 @@ const ExperienceCard = ({ companyLogo, company, role, date, desc, descBullets }:
             className="shadow mb-3"
             alt={companyLogo}
           />
-          <CardTitle tag="h4" className="mb-2">
+          <CardTitle style={{ color: "#144e35" }} tag="h4" className="mb-2">
             {company}
           </CardTitle>
-          <CardSubtitle tag="h5" className="mb-2">
+          <CardSubtitle style={{ color: "#1d734b" }} tag="h5" className="mb-2">
             {role}
           </CardSubtitle>
           <CardSubtitle>{date}</CardSubtitle>

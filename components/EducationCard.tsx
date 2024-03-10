@@ -9,7 +9,7 @@ const EducationCard = ({ schoolName, subHeader, duration, desc, grade, descBulle
       <CardBody>
         <div className="d-flex px-3">
           <div className="pl-4">
-            <h5 className="text-success">{schoolName}</h5>
+            <h5 style={{ color: "#144e35" }}>{schoolName}</h5>
             <h6>{subHeader}</h6>
             <Badge color="success" className="mr-1">
               {duration}
