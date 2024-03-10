@@ -1,6 +1,8 @@
 import React from "react";
 import { Button } from "reactstrap";
 import { socialLinks } from "../portfolio";
+import { TbBrandFiverr } from "react-icons/tb";
+import { SiUpwork } from "react-icons/si";
 
 const SocialLinks = () => {
   return (
@@ -30,6 +32,34 @@ const SocialLinks = () => {
         >
           <span className="btn-inner--icon">
             <i className="fa fa-linkedin" />
+          </span>
+        </Button>
+      )}
+      {socialLinks.fiverr && (
+        <Button
+          className="btn-icon-only rounded-circle ml-1"
+          color="info"
+          rel="noopener"
+          aria-label="Fiverr"
+          href={socialLinks.fiverr}
+          target="_blank"
+        >
+          <span className="btn-inner--icon">
+            <TbBrandFiverr />
+          </span>
+        </Button>
+      )}
+      {socialLinks.upwork && (
+        <Button
+          className="btn-icon-only rounded-circle ml-1"
+          color="success"
+          rel="noopener"
+          aria-label="Upwork"
+          href={socialLinks.upwork}
+          target="_blank"
+        >
+          <span className="btn-inner--icon">
+            <SiUpwork />
           </span>
         </Button>
       )}

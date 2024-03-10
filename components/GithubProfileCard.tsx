@@ -5,10 +5,10 @@ import SocialLinks from "./SocialLinks";
 
 const GithubProfileCard = ({ avatar_url, bio, location }: GithubUserType) => {
   return (
-    <Card className="section-lg bg-gradient-success shadow-lg border-0">
+    <Card className="section-lg bg-gradient-success shadow-lg border-0 p-5">
       <Container className="">
         <div className="p-2">
-          <Row className="">
+          <Row className="p-0">
             <Col className="order-lg-2" lg="4">
               <img
                 src={avatar_url}
@@ -21,7 +21,7 @@ const GithubProfileCard = ({ avatar_url, bio, location }: GithubUserType) => {
               <h2 className="text-white">Reach out to me!</h2>
               <p className="lead text-white mt-3">Projects or just a &quot;hi&quot;? My inbox is ready for all!</p>
               <p className="text-white mt-3">{bio}</p>
-              <div className="my-3 icon-shape bg-gradient-white shadow rounded text-success">
+              <div className="mb-4 icon-shape bg-gradient-white shadow rounded text-success">
                 <i className="ni ni-pin-3 text-success mr-2" />
                 {location}
               </div>

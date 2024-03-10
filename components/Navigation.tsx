@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { greetings, socialLinks } from "../portfolio";
 import Headroom from "headroom.js";
 import { UncontrolledCollapse, NavbarBrand, Navbar, NavItem, NavLink, Nav, Container, Row, Col } from "reactstrap";
+import { SiUpwork } from "react-icons/si";
+import { TbBrandFiverr } from "react-icons/tb";
 
 const Navigation = () => {
   const [collapseClasses, setCollapseClasses] = useState("");
@@ -104,6 +106,34 @@ const Navigation = () => {
                     >
                       <i className="fa fa-linkedin" />
                       <span className="nav-link-inner--text d-lg-none ml-2">Linkedin</span>
+                    </NavLink>
+                  </NavItem>
+                )}
+                {socialLinks.fiverr && (
+                  <NavItem>
+                    <NavLink
+                      rel="noopener"
+                      aria-label="Fiverr"
+                      className="nav-link-icon"
+                      href={socialLinks.fiverr}
+                      target="_blank"
+                    >
+                      <TbBrandFiverr />
+                      <span className="nav-link-inner--text d-lg-none ml-2">Fiverr</span>
+                    </NavLink>
+                  </NavItem>
+                )}
+                {socialLinks.upwork && (
+                  <NavItem>
+                    <NavLink
+                      rel="noopener"
+                      aria-label="Upwork"
+                      className="nav-link-icon"
+                      href={socialLinks.upwork}
+                      target="_blank"
+                    >
+                      <SiUpwork />
+                      <span className="nav-link-inner--text d-lg-none ml-2">Upwork</span>
                     </NavLink>
                   </NavItem>
                 )}

@@ -1,3 +1,7 @@
-body > div:first-child {
+body>div:first-child {
   overflow-x: hidden;
+}
+
+.project-skills {
+  background-color: #d3e2d3;
 }

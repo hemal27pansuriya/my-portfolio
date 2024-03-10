@@ -27,7 +27,9 @@ export const contact = {};
 export const socialLinks: SocialLinksType = {
   email: "mailto:hemalpansuriya007@gmail.com",
   linkedin: "https://www.linkedin.com/in/hemal-pansuriya-750a22203/",
-  github: "https://github.com/hemal27pansuriya"
+  github: "https://github.com/hemal27pansuriya",
+  fiverr: "https://www.fiverr.com/s/6rbrBw",
+  upwork: "https://www.upwork.com/freelancers/~010b75ae332d88b7d8"
 };
 
 export const skillsSection: SkillsSectionType = {
@@ -52,11 +54,11 @@ export const skillsSection: SkillsSectionType = {
         },
         {
           skillName: "Expressjs",
-          iconifyTag: "logos:express",
+          iconifyTag: "skill-icons:expressjs-dark",
         },
         {
           skillName: "MongoDB",
-          iconifyTag: "logos:mongodb",
+          iconifyTag: "skill-icons:mongodb",
         },
         {
           skillName: "Redis",
@@ -68,23 +70,27 @@ export const skillsSection: SkillsSectionType = {
         },
         {
           skillName: "Socketio",
-          iconifyTag: "devicon:socketio-wordmark",
+          iconifyTag: "devicon:socketio",
         },
         {
-          skillName: "Reactjs",
-          iconifyTag: "vscode-icons:file-type-reactjs",
+          skillName: "Typescript",
+          iconifyTag: "devicon:typescript",
+        },
+        {
+          skillName: "Nestjs",
+          iconifyTag: "logos:nestjs",
         },
         {
           skillName: "Graphql",
           iconifyTag: "logos:graphql",
         },
         {
-          skillName: "Typescript",
-          iconifyTag: "logos:typescript",
+          skillName: "Reactjs",
+          iconifyTag: "vscode-icons:file-type-reactjs",
         },
         {
-          skillName: "Nestjs",
-          iconifyTag: "logos:nestjs",
+          skillName: "Redux",
+          iconifyTag: "logos:redux",
         },
         {
           skillName: "HTML",
@@ -101,6 +107,38 @@ export const skillsSection: SkillsSectionType = {
         {
           skillName: "Git",
           iconifyTag: "logos:git",
+        },
+        {
+          skillName: "GitHub",
+          iconifyTag: "icon-park:github",
+        },
+        {
+          skillName: "GitLab",
+          iconifyTag: "devicon:gitlab",
+        },
+        {
+          skillName: "BitBucket",
+          iconifyTag: "logos:bitbucket",
+        },
+        {
+          skillName: "Jest",
+          iconifyTag: "logos:jest",
+        },
+        {
+          skillName: "Mocha",
+          iconifyTag: "logos:mocha",
+        },
+        {
+          skillName: "Akamai",
+          iconifyTag: "logos:akamai",
+        },
+        {
+          skillName: "Firebase",
+          iconifyTag: "logos:firebase",
+        },
+        {
+          skillName: "Grpc",
+          iconifyTag: "logos:grpc",
         },
       ],
     },
@@ -127,12 +165,12 @@ export const educationInfo: EducationType[] = [
     schoolName: "Government Engineering College, Gandhinagar",
     subHeader: "Bachelor of Engineering in Information Technology",
     duration: "June 2018 - April 2022",
-    desc: "Completed graduation in information technology containing web development, data structure, database, cryptography etc subjects.",
+    desc: "Completed graduation in information technology containing web development, data structure, database, etc subjects.",
     grade: "CGPA - 8.51",
     descBullets: [], // Array of Strings
   },
   {
-    schoolName: "Nalanda Vidhyalay - Derdi(Ku.)",
+    schoolName: "Nalanda Vidhyalay - Derdi(Ku.) - Higher Secondary",
     subHeader: "11-12th Science",
     duration: "June 2016 - April 2018",
     desc: "Completed higher studies in science steam containing Mathematics, Physics and Chemistry subjects.",
@@ -157,36 +195,152 @@ export const projects: ProjectType[] = [
     desc: "Game of Housie where user can easily manage number of tickets easily. Providing 45+ winning patterns where one can select desired winning patterns and play Housie game with interactive UI experience.",
     github: "",
     link: "https://housiemate.com",
+    img: '/img/projects/housiemate.png',
+    skills: [
+      {
+        name: "Reactjs",
+        iconifyTag: "logos:react",
+      },
+      {
+        name: "Nodejs",
+        iconifyTag: "logos:nodejs",
+      },
+      {
+        name: "Expressjs",
+        iconifyTag: "skill-icons:expressjs-dark",
+      },
+      {
+        name: "MongoDB",
+        iconifyTag: "skill-icons:mongodb",
+      },
+      {
+        name: "Redis",
+        iconifyTag: "logos:redis",
+      },
+      {
+        name: "Socketio",
+        iconifyTag: "devicon:socketio",
+      },
+      {
+        name: "Redux",
+        iconifyTag: "logos:redux",
+      },
+    ]
   },
   {
     name: "Fansportiz",
     desc: "Fantasy sports game where user can create teams and join contest and won exciting prizes. Providing number of sports games containing Cricket, Football, Basketball, Kabaddi, Baseball, Csgo etc.",
     github: "",
     link: "https://fansportiz.com",
-  },
-  {
-    name: "Cartola Pix",
-    desc: "Cartola pix is also fantasy sports game based on brazil. Working on features like live game events with third party.",
-    github: "",
-    link: "",
+    img: "/img/projects/fansportiz.png",
+    skills: [
+      {
+        name: "Reactjs",
+        iconifyTag: "logos:react",
+      },
+      {
+        name: "Nodejs",
+        iconifyTag: "logos:nodejs",
+      },
+      {
+        name: "Expressjs",
+        iconifyTag: "skill-icons:expressjs-dark",
+      },
+      {
+        name: "MongoDB",
+        iconifyTag: "skill-icons:mongodb",
+      },
+      {
+        name: "Redis",
+        iconifyTag: "logos:redis",
+      },
+      {
+        name: "MySql",
+        iconifyTag: "logos:mysql",
+      },
+      {
+        name: "Redux",
+        iconifyTag: "logos:redux",
+      },
+      {
+        name: "Grpc",
+        iconifyTag: "logos:grpc",
+      },
+      {
+        name: "Mocha",
+        iconifyTag: "logos:mocha",
+      },
+    ]
   },
   {
     name: "Powerplay11",
-    desc: "Powerplay11 is also fantasy sports game similar to fansportiz by jio in jiogames. Worked on crucial modules like prize breakup and crown currency provided by Jio games.",
+    desc: "Powerplay11 is also fantasy sports game similar to fansportiz by jio in Jio games. Worked on crucial modules like prize breakup and crown currency provided by Jio games. Worked with jio team members for development and made product live.",
     github: "",
     link: "",
+    img: "/img/projects/powerplay11.png",
+    skills: [
+      {
+        name: "Reactjs",
+        iconifyTag: "logos:react",
+      },
+      {
+        name: "Nodejs",
+        iconifyTag: "logos:nodejs",
+      },
+      {
+        name: "Expressjs",
+        iconifyTag: "skill-icons:expressjs-dark",
+      },
+      {
+        name: "MongoDB",
+        iconifyTag: "skill-icons:mongodb",
+      },
+      {
+        name: "Redis",
+        iconifyTag: "logos:redis",
+      },
+      {
+        name: "MySql",
+        iconifyTag: "logos:mysql",
+      },
+      {
+        name: "Redux",
+        iconifyTag: "logos:redux",
+      },
+      {
+        name: "Grpc",
+        iconifyTag: "logos:grpc",
+      },
+      {
+        name: "Mocha",
+        iconifyTag: "logos:mocha",
+      },
+    ]
   },
   {
     name: "Lovely",
-    desc: "Lovely is the platform where lucky user wins crypto coins by bidding currency on cards, coin, dice in different games. Basically this was blockchain project as bidding with cryptocurrency in game, There are games Ace Cosmos(card), Lovely Queen(card), Toss Master(coin), Roll Dice(dice), Rolling Luck(number).",
+    desc: "Lovely is the platform where lucky user wins crypto coins by bidding currency on cards, coin, dice in different games. Basically this was blockchain project as bidding with cryptocurrency in game, There are games Ace Cosmos(card), Lovely Queen(card), Toss Master(coin).",
     github: "",
     link: "",
-  },
-  {
-    name: "Get Contacts",
-    desc: "GetContact is the platform to find the person by mobile number and by field and designation. App where you can find all connections of searched contact that how you are connected to them.",
-    github: "",
-    link: "",
+    img: "/img/projects/lovely.png",
+    skills: [
+      {
+        name: "Nodejs",
+        iconifyTag: "logos:nodejs",
+      },
+      {
+        name: "Expressjs",
+        iconifyTag: "skill-icons:expressjs-dark",
+      },
+      {
+        name: "MongoDB",
+        iconifyTag: "skill-icons:mongodb",
+      },
+      {
+        name: "Web3js",
+        iconifyTag: "logos:web3js",
+      },
+    ]
   }
 ];
 

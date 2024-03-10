@@ -73,9 +73,20 @@ export type ExperienceType = {
 
 // * PROJECT SECTION
 
+export type ProjectSkillsType = {
+  name: string;
+  iconifyTag: string;
+}
+
+export type PSkillType = {
+  skills: ProjectSkillsType[];
+}
+
 export type ProjectType = {
   name: string;
   desc: string;
   github?: string;
   link?: string;
+  img: string;
+  skills?: ProjectSkillsType[];
 };
