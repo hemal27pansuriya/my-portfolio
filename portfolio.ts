@@ -209,7 +209,8 @@ export const experience: ExperienceType[] = [
     company: "Yudiz Solutions Limited",
     companyLogo: "/img/icons/common/yudiz-logo.png",
     date: "Jan 2022 - Present",
-    desc: "Currently, I am actively involved in collaborative team projects, working across diverse technical teams, and utilizing my expertise in Node.js, Express.js, MongoDB, MySQL, Redis, and Socket.IO. Projects like Fansportiz, HousieMate, Cartola Pix Fantasy, Jio Fantasy, and Lovely Finance reflect my ability to thrive in cross-functional environments while contributing to the development of robust solutions."
+    desc: "Currently, I am actively involved in collaborative team projects, working across diverse technical teams, and utilizing my expertise in Node.js, Express.js, MongoDB, MySQL, Redis, and Socket.IO. Projects like Fansportiz, HousieMate, Cartola Pix Fantasy, Jio Fantasy, and Lovely Finance reflect my ability to thrive in cross-functional environments while contributing to the development of robust solutions.",
+    link: 'https://yudiz.com'
   }
 ];
 

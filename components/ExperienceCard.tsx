@@ -1,9 +1,9 @@
 import React from "react";
-import { Card, CardBody, CardTitle, CardSubtitle, CardText, Col } from "reactstrap";
+import { Card, CardBody, CardTitle, CardSubtitle, CardText, Col, Button } from "reactstrap";
 import Fade from "react-reveal/Fade";
 import { ExperienceType } from "../types/sections";
 
-const ExperienceCard = ({ companyLogo, company, role, date, desc, descBullets }: ExperienceType) => {
+const ExperienceCard = ({ companyLogo, company, role, date, desc, descBullets, link }: ExperienceType) => {
   return (
     <Col lg="6">
       <Card style={{ flex: 1 }} className="shadow-lg--hover my-4 shadow border-0 text-center rounded h-100">
@@ -31,7 +31,7 @@ const ExperienceCard = ({ companyLogo, company, role, date, desc, descBullets }:
             {role}
           </CardSubtitle>
           <CardSubtitle>{date}</CardSubtitle>
-          <CardText tag="div" className="description my-3 text-left">
+          <CardText tag="div" className="description my-3 text-left pr-4 pl-4">
             {desc}
             <ul>
               {descBullets
@@ -40,6 +40,21 @@ const ExperienceCard = ({ companyLogo, company, role, date, desc, descBullets }:
                   })
                 : null}
             </ul>
+            {link ? (
+              <Button
+                className="btn-icon"
+                color="success"
+                href={link}
+                target="_blank"
+                rel="noopener"
+                aria-label="Twitter"
+              >
+                <span className="btn-inner--icon">
+                  <i className="fa fa-arrow-right mr-2" />
+                </span>
+                <span className="nav-link-inner--text ml-1">Link</span>
+              </Button>
+            ) : null}
           </CardText>
         </CardBody>
       </Card>
