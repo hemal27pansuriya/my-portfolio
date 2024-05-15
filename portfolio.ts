@@ -15,7 +15,7 @@ export const greetings: GreetingsType = {
   title: "Hi all, I'm Hemal",
   description:
     "Dedicated Full Stack web developer with expertise in backend technologies, specializing in Node.js, Express.js, and MongoDB and frontend technologies specializing in React.js and Redux to broaden skills in creating seamless user interfaces; known for effective communication and collaborative problem-solving within cross-functional teams.",
-  resumeLink: "https://drive.google.com/file/d/13uSqbccGKjTjAif9DN3B_DfCGqXBE-jP/view?usp=drive_link",
+  resumeLink: "https://drive.google.com/file/d/1vaQD9EmpiDIN0XW5RmoB-VE-VtiisHPK/view?usp=drive_link",
 };
 
 export const openSource = {
