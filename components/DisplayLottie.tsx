@@ -1,23 +1,41 @@
-import React from "react";
-import Lottie from "react-lottie";
+'use client';
+
+import React, { useEffect, useState } from "react";
+import dynamic from 'next/dynamic';
+
+const Lottie = dynamic(() => import('react-lottie'), { ssr: false });
 
 type Props = {
   animationPath: string;
 };
 
-const GreetingLottie = ({ animationPath }: Props) => {
+const DisplayLottie = ({ animationPath }: Props) => {
+  const [animationData, setAnimationData] = useState(null);
+
+  useEffect(() => {
+    fetch(animationPath)
+      .then((response) => response.json())
+      .then((data) => setAnimationData(data));
+  }, [animationPath]);
+
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    path: animationPath,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
   };
+
+  if (!animationData) {
+    return null;
+  }
 
   return (
     <div style={{ width: "80%" }} onClick={() => null}>
-      {/* @ts-ignore */}
       <Lottie options={defaultOptions} />
     </div>
   );
 };
 
-export default GreetingLottie;
+export default DisplayLottie;
