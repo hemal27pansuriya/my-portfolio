@@ -2,8 +2,12 @@
 
 import React, { useEffect, useState } from "react";
 import dynamic from 'next/dynamic';
+import type { Options } from "react-lottie";
 
-const Lottie = dynamic(() => import('react-lottie').then((mod) => mod.default), { ssr: false });
+const Lottie = dynamic(
+  () => import('react-lottie').then((module: any) => module.default) as Promise<React.ComponentType<{options: Options}>>,
+  { ssr: false }
+);
 
 type Props = {
   animationPath: string;
