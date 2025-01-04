@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import dynamic from 'next/dynamic';
 
-const Lottie = dynamic(() => import('react-lottie'), { ssr: false });
+const Lottie = dynamic(() => import('react-lottie').then((mod) => mod.default), { ssr: false });
 
 type Props = {
   animationPath: string;
