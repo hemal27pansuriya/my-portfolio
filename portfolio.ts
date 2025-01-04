@@ -11,11 +11,12 @@ import {
 } from "./types/sections";
 
 export const greetings: GreetingsType = {
-  name: "हेमल पानसुरीया",
+  name: "Hemal Pansuriya",
   title: "Hi all, I'm Hemal",
   description:
     "Dedicated Full Stack web developer with expertise in backend technologies, specializing in Node.js, Express.js, and MongoDB and frontend technologies specializing in React.js and Redux to broaden skills in creating seamless user interfaces; known for effective communication and collaborative problem-solving within cross-functional teams.",
-  resumeLink: "https://drive.google.com/file/d/1JcpM1W64Y6NlVE6TVOQKkwVCNTPIYsS1/view?usp=sharing",
+  // resumeLink: "https://drive.google.com/file/d/1JcpM1W64Y6NlVE6TVOQKkwVCNTPIYsS1/view?usp=sharing",
+  resumeLink: "https://drive.google.com/file/d/1C36WaWmFszd-TV8f4etUbKia3vI4iBSL/view?usp=drive_links",
 };
 
 export const openSource = {
@@ -216,22 +217,18 @@ export const experience: ExperienceType[] = [
 
 export const projects: ProjectType[] = [
   {
-    name: "HousieMate",
-    desc: "Game of Housie where user can easily manage number of tickets easily. Providing 45+ winning patterns where one can select desired winning patterns and play Housie game with interactive UI experience.",
+    name: "Fantasy Sports Platform",
+    desc: "Fantasy sports game where user can create teams and join contest and won exciting prizes. Providing number of sports games containing Cricket, Football, Basketball, Kabaddi, Baseball, Csgo etc.",
     github: "",
-    link: "https://housiemate.com",
-    img: '/img/projects/housiemate.png',
+    link: "",
+    img: "/img/projects/fantasy.jpeg",
     skills: [
       {
-        name: "Reactjs",
-        iconifyTag: "logos:react",
-      },
-      {
-        name: "Nodejs",
+        name: "NodeJS",
         iconifyTag: "logos:nodejs",
       },
       {
-        name: "Expressjs",
+        name: "ExpressJS",
         iconifyTag: "skill-icons:expressjs-dark",
       },
       {
@@ -243,32 +240,134 @@ export const projects: ProjectType[] = [
         iconifyTag: "logos:redis",
       },
       {
-        name: "Socketio",
+        name: "MySql",
+        iconifyTag: "logos:mysql",
+      },
+      {
+        name: "ReactJS",
+        iconifyTag: "logos:react",
+      },
+      {
+        name: "Redux",
+        iconifyTag: "logos:redux",
+      },
+      {
+        name: "Grpc",
+        iconifyTag: "logos:grpc",
+      },
+      {
+        name: "Mocha",
+        iconifyTag: "logos:mocha",
+      },
+      {
+        name: "Firebase",
+        iconifyTag: "logos:firebase",
+      },
+    ]
+  },
+  {
+    name: "Housie Game - Tambola",
+    desc: "Game of Housie where user can easily manage number of tickets easily. Providing 45+ winning patterns where one can select desired winning patterns and play Housie game with interactive UI experience.",
+    github: "",
+    link: "",
+    img: '/img/projects/housie.jpeg',
+    skills: [
+      {
+        name: "NodeJS",
+        iconifyTag: "logos:nodejs",
+      },
+      {
+        name: "ExpressJS",
+        iconifyTag: "skill-icons:expressjs-dark",
+      },
+      {
+        name: "MongoDB",
+        iconifyTag: "skill-icons:mongodb",
+      },
+      {
+        name: "Redis",
+        iconifyTag: "logos:redis",
+      },
+      {
+        name: "SocketIO",
         iconifyTag: "devicon:socketio",
       },
       {
-        name: "Redux",
-        iconifyTag: "logos:redux",
-      },
-    ]
-  },
-  {
-    name: "Fansportiz",
-    desc: "Fantasy sports game where user can create teams and join contest and won exciting prizes. Providing number of sports games containing Cricket, Football, Basketball, Kabaddi, Baseball, Csgo etc.",
-    github: "",
-    link: "https://fansportiz.com",
-    img: "/img/projects/fansportiz.png",
-    skills: [
-      {
-        name: "Reactjs",
+        name: "ReactJS",
         iconifyTag: "logos:react",
       },
       {
-        name: "Nodejs",
+        name: "Redux",
+        iconifyTag: "logos:redux",
+      },
+      {
+        name: "Firebase",
+        iconifyTag: "logos:firebase",
+      },
+    ]
+  },
+  // {
+  //   name: "Powerplay11",
+  //   desc: "Powerplay11 is also fantasy sports game similar to fansportiz by jio in Jio games. Worked on crucial modules like prize breakup and crown currency provided by Jio games. Worked with jio team members for development and made product live.",
+  //   github: "",
+  //   link: "",
+  //   img: "/img/projects/powerplay11.png",
+  //   skills: [
+  //     {
+  //       name: "NodeJS",
+  //       iconifyTag: "logos:nodejs",
+  //     },
+  //     {
+  //       name: "ExpressJS",
+  //       iconifyTag: "skill-icons:expressjs-dark",
+  //     },
+  //     {
+  //       name: "MongoDB",
+  //       iconifyTag: "skill-icons:mongodb",
+  //     },
+  //     {
+  //       name: "Redis",
+  //       iconifyTag: "logos:redis",
+  //     },
+  //     {
+  //       name: "MySql",
+  //       iconifyTag: "logos:mysql",
+  //     },
+  //     {
+  //       name: "ReactJS",
+  //       iconifyTag: "logos:react",
+  //     },
+  //     {
+  //       name: "Redux",
+  //       iconifyTag: "logos:redux",
+  //     },
+  //     {
+  //       name: "Grpc",
+  //       iconifyTag: "logos:grpc",
+  //     },
+  //     {
+  //       name: "Mocha",
+  //       iconifyTag: "logos:mocha",
+  //     },
+  //     {
+  //       name: "Firebase",
+  //       iconifyTag: "logos:firebase",
+  //     },
+  //   ]
+  // },
+  {
+    name: "Real Universe",
+    desc: "Real Universe is an innovative web and mobile platform designed to unite the entire real estate ecosystem. This platform serves as a central hub for developers, vendors, channel partners, job seekers, and industry professionals to connect, collaborate, and grow together.",
+    github: "",
+    link: "",
+    img: "/img/projects/realuni.jpeg",
+    skills: [
+      {
+        name: "NodeJS",
         iconifyTag: "logos:nodejs",
       },
       {
-        name: "Expressjs",
+        name: "ExpressJS",
         iconifyTag: "skill-icons:expressjs-dark",
       },
       {
@@ -280,93 +379,44 @@ export const projects: ProjectType[] = [
         iconifyTag: "logos:redis",
       },
       {
-        name: "MySql",
-        iconifyTag: "logos:mysql",
+        name: "SocketIO",
+        iconifyTag: "devicon:socketio",
       },
       {
-        name: "Redux",
-        iconifyTag: "logos:redux",
+        name: "NextJS",
+        iconifyTag: "logos:nextjs",
       },
       {
-        name: "Grpc",
-        iconifyTag: "logos:grpc",
-      },
-      {
-        name: "Mocha",
-        iconifyTag: "logos:mocha",
-      },
-    ]
-  },
-  {
-    name: "Powerplay11",
-    desc: "Powerplay11 is also fantasy sports game similar to fansportiz by jio in Jio games. Worked on crucial modules like prize breakup and crown currency provided by Jio games. Worked with jio team members for development and made product live.",
-    github: "",
-    link: "",
-    img: "/img/projects/powerplay11.png",
-    skills: [
-      {
-        name: "Reactjs",
-        iconifyTag: "logos:react",
-      },
-      {
-        name: "Nodejs",
-        iconifyTag: "logos:nodejs",
-      },
-      {
-        name: "Expressjs",
-        iconifyTag: "skill-icons:expressjs-dark",
-      },
-      {
-        name: "MongoDB",
-        iconifyTag: "skill-icons:mongodb",
-      },
-      {
-        name: "Redis",
-        iconifyTag: "logos:redis",
-      },
-      {
-        name: "MySql",
-        iconifyTag: "logos:mysql",
-      },
-      {
-        name: "Redux",
-        iconifyTag: "logos:redux",
-      },
-      {
-        name: "Grpc",
-        iconifyTag: "logos:grpc",
-      },
-      {
-        name: "Mocha",
-        iconifyTag: "logos:mocha",
-      },
-    ]
-  },
-  {
-    name: "Lovely",
-    desc: "Lovely is the platform where lucky user wins crypto coins by bidding currency on cards, coin, dice in different games. Basically this was blockchain project as bidding with cryptocurrency in game, There are games Ace Cosmos(card), Lovely Queen(card), Toss Master(coin).",
-    github: "",
-    link: "",
-    img: "/img/projects/lovely.png",
-    skills: [
-      {
-        name: "Nodejs",
-        iconifyTag: "logos:nodejs",
-      },
-      {
-        name: "Expressjs",
-        iconifyTag: "skill-icons:expressjs-dark",
-      },
-      {
-        name: "MongoDB",
-        iconifyTag: "skill-icons:mongodb",
-      },
-      {
-        name: "Web3js",
-        iconifyTag: "logos:web3js",
+        name: "Firebase",
+        iconifyTag: "logos:firebase",
       },
     ]
   }
+  // {
+  //   name: "Lovely",
+  //   desc: "Lovely is the platform where lucky user wins crypto coins by bidding currency on cards, coin, dice in different games. Basically this was blockchain project as bidding with cryptocurrency in game, There are games Ace Cosmos(card), Lovely Queen(card), Toss Master(coin).",
+  //   github: "",
+  //   link: "",
+  //   img: "/img/projects/lovely.png",
+  //   skills: [
+  //     {
+  //       name: "Nodejs",
+  //       iconifyTag: "logos:nodejs",
+  //     },
+  //     {
+  //       name: "Expressjs",
+  //       iconifyTag: "skill-icons:expressjs-dark",
+  //     },
+  //     {
+  //       name: "MongoDB",
+  //       iconifyTag: "skill-icons:mongodb",
+  //     },
+  //     {
+  //       name: "Web3js",
+  //       iconifyTag: "logos:web3js",
+  //     },
+  //   ]
+  // }
 ];
 
 // See object prototype on /types/section.ts page
