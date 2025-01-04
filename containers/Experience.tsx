@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 const Experience = () => {
   return (
     experience && (
-      <Fade bottom duration={2000}>
+      <Fade right duration={2000}>
         <section className="section section-lg">
           <Container>
             <div className="d-flex p-4">
